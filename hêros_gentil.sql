@@ -27,13 +27,13 @@ INSERT INTO `Heros` (`ID`, `Nom`, `PV`, `Bonus`, `Defense`, `ArmeEnMain`, `Statu
 	VALUES
 	(1, 'Comar', 40, 2, 15, NULL, 'joyeux', 'mousse'),
 	(2, 'Kirderf', 35, 14, 5, NULL, 'combatif', 'aucun'),
-	(3, 'Luijen', 45, 5, 8, NULL, 'Flegme', 'destabilisant')
+	(3, 'Luijen', 45, 5, 8, NULL, 'Flegme', 'destabilisant');
 
 INSERT INTO `Competences` (`ID`, `Type`, `Effet`) 
 	VALUES
 	(1, 'PV', 'Confusion par coup critique de php'),
 	(2, 'Defense', 'Defense reduite par coup amie'),
-	(3, 'PV', 'A trouver un caramel par terre')
+	(3, 'PV', 'A trouver un caramel par terre');
 	
 INSERT INTO `Armes` (`ID`, `HeroID`, `Nom`, `Type`, `Degat`) 
 	VALUES
@@ -42,10 +42,10 @@ INSERT INTO `Armes` (`ID`, `HeroID`, `Nom`, `Type`, `Degat`)
 	(3, 0, 'Microsoft', 'effrayant', 20),
 	(4, 0, 'feulle', 'tranchant', 5),
 	(5, 0, 'caillou', 'contondant', 5),
-	(6, 0, 'ciseau', 'perçant', 5)
+	(6, 0, 'ciseau', 'perçant', 5);
 	
 UPDATE `Armes`
-SET `Nom` = feuille
+SET `Nom` = `feuille`
 WHERE ID = 4;
 
 CREATE TABLE `HeroeCompetences` (
